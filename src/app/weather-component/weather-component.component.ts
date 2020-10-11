@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeatherComponentComponent implements OnInit {
 
+  city: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  clickedEnter() {
+    alert("User clicked me")
   }
 
 }

@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { WeatherComponentComponent } from './weather-component.component';
 
-describe('WeatherComponentComponent', () => {
+describe('weather-componentComponent', () => {
   let component: WeatherComponentComponent;
   let fixture: ComponentFixture<WeatherComponentComponent>;
 

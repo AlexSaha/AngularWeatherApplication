@@ -5,7 +5,26 @@
         
             <input type="text" [(ngModel)]="city">
             <br><br>
-            <strong style=color:lightseagreen>    Current City: {{ city }} </strong>
+            <strong style=color:lightseagreen>{{ city }}</strong>
+            <br>
+            <button class="BUTTON_WIF" (click)="clickedEnter()">SEARCH</button>
+
         </p>
     </body>
 </div>
+
+<div class="displayInfoContainer">
+    
+
+        <!-- True block -->
+        <!-- <ng-template [ngIf]="city > 75" [ngIfElse]="none">
+            <p>Temp value is over 75</p>
+        </ng-template> -->
+
+        <!-- False block -->
+        <!-- <ng-template #none>
+            <p>Temp value is under 75</p>
+        </ng-template> -->
+
+
+</div> 

@@ -7,11 +7,14 @@ import { WeatherComponentComponent } from './weather-component/weather-component
 import { ListComponent } from './list/list.component';
 import { FormsModule } from '@angular/forms';
 
+// import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponentComponent,
-    ListComponent
+    ListComponent,
+    // HttpClientModule,
   ],
   imports: [
     BrowserModule,

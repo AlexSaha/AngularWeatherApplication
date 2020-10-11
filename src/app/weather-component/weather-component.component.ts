@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class WeatherComponentComponent implements OnInit {
 
   city: string = '';
+  temp: number = 0.0
 
   constructor() { }
 
@@ -15,7 +16,7 @@ export class WeatherComponentComponent implements OnInit {
   }
 
   clickedEnter() {
-    alert("User clicked me")
+    alert(this.city)
   }
 
 }

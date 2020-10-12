@@ -5,41 +5,40 @@
     text-align: center;
 }
 
-.BUTTON_WIF {
-    background: #2279DB;
-    background-image: -webkit-linear-gradient(top, #2279DB, #0042AE);
-    background-image: -moz-linear-gradient(top, #2279DB, #0042AE);
-    background-image: -ms-linear-gradient(top, #2279DB, #0042AE);
-    background-image: -o-linear-gradient(top, #2279DB, #0042AE);
-    background-image: -webkit-gradient(to bottom, #2279DB, #0042AE);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    color: #000000;
-    font-family: 'Nunito', 'sans-serif';
-    font-size: 25px;
-    font-weight: 50;
-    padding: 7px;
+.BUTTON_MZE {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #ffffffa9;
+    font-size: 22px;
+    padding: 10px;
+    height: 60px;
+    width: 120px;
+    background-color: #646851;
     -webkit-box-shadow: 1px 1px 20px 0 #000000;
     -moz-box-shadow: 1px 1px 20px 0 #000000;
-    box-shadow: 1px 1px 10px 0 #000000;
-    border: solid #337FED 1px;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     text-align: center;
+    font-family: 'Nunito';
  }
- 
- .BUTTON_WIF:hover {
-    border: solid #337FED 1px;
-    background: #1E62D0;
-    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    text-decoration: none;
- }
+
+ input[type=text]{
+    border-radius:10px;
+    width: 250px;
+    height: 25px;
+    background-color: lightgray;
+    outline: none;
+  }
+
+  input[type=text]:focus {
+    
+    border: 1px solid #df1f1f;
+    color: black;
+    font-family: 'Nunito', 'sans-serif';
+    text-align: center;
+    font-style: 25px;
+}

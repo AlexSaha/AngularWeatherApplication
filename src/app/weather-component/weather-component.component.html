@@ -1,28 +1,42 @@
 <div class="searchContainer">
     <body>
-        <h1 style=color:lightseagreen>Search a city: </h1>
-        <p>
-        
+        <h1 style=color:#646851>Search a city: </h1>
             <input type="text" [(ngModel)]="city" (keyup.enter)="activateSearch()">
             <br><br>
-            <strong style=color:lightseagreen>{{ city }}</strong>
+            <strong style="color:#646851;font-size: 35px;">{{ city }}</strong>
             <br><br>
             <button class="BUTTON_MZE" (click)="activateSearch()">Search</button>
-        </p>
+            <br>
+            <br>
     </body>
 </div>
 
 <div class="displayInfoContainer">
-    
-        <!-- True block -->
-        <!-- <ng-template [ngIf]="city > 75" [ngIfElse]="none">
-            <p>Temp value is over 75</p>
-        </ng-template> -->
+        
+        <!-- Temp Value has been passed in for use -->
+        <ng-template [ngIf]="temp > 0" [ngIfElse]="noValue">
+            <p class="response">Conditions: {{condition}}</p>
+            <p class="response">CurrentTemperature: {{temp | number:'1.1-1'}}°F</p>
+            <p class="response">Maxium Temperature: {{temp_max | number:'1.1-1'}}°F</p>
+            <p class="response">Minimum Temperature: {{temp_min | number:'1.1-1'}}°F</p>
+        </ng-template>
 
-        <!-- False block -->
-        <!-- <ng-template #none>
-            <p>Temp value is under 75</p>
-        </ng-template> -->
+        <ng-template [ngIf]="condition == 'Clouds'" [ngIfElse]="none">
+            <img src="/src/assets/clouds.png/" alt="Clouds" width="250" height="250">
+        </ng-template>
+
+        <ng-template [ngIf]="condition == 'Sunny'" [ngIfElse]="none">
+            <img src="/src/assets/clouds.png/" alt="Clouds" width="250" height="250">
+        </ng-template>
+
+
+        <!-- False blocks -->
+        <ng-template #noValue>
+            <p class="response">Waiting for location...</p>
+        </ng-template>
+
+        <ng-template #none>
+        </ng-template>
 
 
 </div> 

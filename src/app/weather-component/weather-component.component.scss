@@ -3,6 +3,14 @@
     font-family: 'Nunito', 'sans-serif';
     font-size: 24px;
     text-align: center;
+    background-color: #31313111;
+    border-radius: 25px;
+}
+
+.displayInfoContainer {
+  width: 550px;
+  margin: auto;
+  padding: 0.1px;
 }
 
 .BUTTON_MZE {
@@ -28,17 +36,24 @@
 
  input[type=text]{
     border-radius:10px;
-    width: 250px;
-    height: 25px;
-    background-color: lightgray;
+    width: 255px;
+    height: 30px;
+    background-color: rgb(255, 252, 235);
     outline: none;
+    font-family: 'Nunito', 'sans-serif';
   }
 
   input[type=text]:focus {
     
-    border: 1px solid #df1f1f;
+    border: 1px solid #24caf3;
     color: black;
     font-family: 'Nunito', 'sans-serif';
     text-align: center;
     font-style: 25px;
+}
+
+.response {
+  color: slategray;
+  font-size: 25px;
+  opacity: 37%;
 }

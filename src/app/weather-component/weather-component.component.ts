@@ -33,37 +33,18 @@ export class WeatherComponentComponent implements OnInit {
       this.temp_min = data.main.temp_min
       this.condition = data.weather[0].main
 
-      alert("Coniditon" + this.condition + "Temp: " + this.temp + "Max: " + this.temp_max + "Min: " + this.temp_min)
-      
+      alert(this.city + " Weather: Conditions: " + this.condition + " Temp: " + this.temp + " Max: " + this.temp_max + " Min: " + this.temp_min)
+      console.log(this.condition);
+
     })
   }
 
   ngOnInit(): void {
   }
 
-  clickedSearch() {
+  activateSearch() {
     alert(this.city);
-    this.httpGet();
     this.getPost();
   }
-
-  httpGet() {
-
-    this.http.get("http://api.openweathermap.org/data/2.5/weather?q=" + this.city + "&appid=be6801d0b56818b9c53b46afef41f8da",
-        {
-        })
-        .subscribe(
-            (val) => {
-                console.log("GET Call Success", 
-                            val);
-            },
-            response => {
-                console.log("GET Call Error", response);
-            },
-            () => {
-                console.log("GET Call Complete");
-            });
-    }
-
 }
 

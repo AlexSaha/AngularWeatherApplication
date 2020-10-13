@@ -3,7 +3,7 @@
     font-family: 'Nunito', 'sans-serif';
     font-size: 24px;
     text-align: center;
-    background-color: #31313111;
+    background-color: #3131311a;
     border-radius: 25px;
 }
 
@@ -17,12 +17,13 @@
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    color: #ffffffa9;
+    border-width: 0px;
+    color: #313131;
     font-size: 22px;
     padding: 10px;
     height: 60px;
-    width: 120px;
-    background-color: #646851;
+    width: 125px;
+    background-color: #f19a36;
     -webkit-box-shadow: 1px 1px 20px 0 #000000;
     -moz-box-shadow: 1px 1px 20px 0 #000000;
     box-shadow: 1px 1px 20px 0 #000000;
@@ -31,25 +32,25 @@
     display: inline-block;
     cursor: pointer;
     text-align: center;
-    font-family: 'Nunito';
+    font-family: 'Nunito', 'sans-serif';
  }
 
  input[type=text]{
-    border-radius:10px;
-    width: 255px;
-    height: 30px;
+    border-radius:25px;
+    width: 275px;
+    height: 50px;
     background-color: rgb(255, 252, 235);
+    text-align: center;
     outline: none;
     font-family: 'Nunito', 'sans-serif';
+    font-size: 25px;
   }
 
   input[type=text]:focus {
-    
-    border: 1px solid #24caf3;
+    border: 1px solid #f19a36;
     color: black;
-    font-family: 'Nunito', 'sans-serif';
     text-align: center;
-    font-style: 25px;
+    font-size: 25px;
 }
 
 .response {

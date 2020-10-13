@@ -26,7 +26,7 @@ export class WeatherComponentComponent implements OnInit {
    }
 
   getPost()  {
-    this.http.get<any>("https://api.openweathermap.org/data/2.5/weather?q=" + this.city + "&appid=be6801d0b56818b9c53b46afef41f8da").subscribe(data => {
+    this.http.get<any>("http://api.openweathermap.org/data/2.5/weather?q=" + this.city + "&appid=be6801d0b56818b9c53b46afef41f8da").subscribe(data => {
       
       this.temp = ((data.main.temp) * 9/5) - 459.67
       this.temp_max = ((data.main.temp_max) * 9/5) - 459.67

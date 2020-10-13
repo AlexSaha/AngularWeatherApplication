@@ -3,11 +3,11 @@
         <h1 style=color:lightseagreen>Search a city: </h1>
         <p>
         
-            <input type="text" [(ngModel)]="city">
+            <input type="text" [(ngModel)]="city" (keyup.enter)="clickedSearch()">
             <br><br>
             <strong style=color:lightseagreen>{{ city }}</strong>
             <br><br>
-            <button class="BUTTON_MZE" (click)="clickedEnter()">Search</button>
+            <button class="BUTTON_MZE" (click)="clickedSearch()">Search</button>
         </p>
     </body>
 </div>

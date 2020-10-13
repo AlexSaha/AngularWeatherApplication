@@ -6,20 +6,19 @@ import { AppComponent } from './app.component';
 import { WeatherComponentComponent } from './weather-component/weather-component.component';
 import { ListComponent } from './list/list.component';
 import { FormsModule } from '@angular/forms';
-
-// import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponentComponent,
-    ListComponent,
-    // HttpClientModule,
+    ListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

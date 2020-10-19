@@ -43,7 +43,8 @@
     border-radius:25px;
     width: 275px;
     height: 50px;
-    background-color: rgb(255, 252, 235);
+    background-color: rgba(255, 252, 235, 0.301);
+    border-width: 0px;
     text-align: center;
     outline: none;
     font-family: 'Nunito', 'sans-serif';
@@ -61,4 +62,19 @@
   color: whitesmoke;
   font-size: 27px;
   text-shadow: 2.5px 2.5px black;
+}
+
+h1 {
+  display: block;
+  font-size: 2.1em;
+  margin-top: 0.22em;
+  margin-bottom: 0.22em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-size: 72px;
+  background-image: linear-gradient(45deg, #f3ec78, #991a3e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

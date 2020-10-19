@@ -14,26 +14,30 @@
 }
 
 .BUTTON_MZE {
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    border-width: 0px;
-    color: #313131;
-    font-size: 22px;
-    padding: 10px;
-    height: 60px;
-    width: 125px;
-    background-color: #f19a36;
-    -webkit-box-shadow: 1px 1px 20px 0 #000000;
-    -moz-box-shadow: 1px 1px 20px 0 #000000;
-    box-shadow: 1px 1px 20px 0 #000000;
-    text-shadow: 1px 1px 20px #000000;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    font-family: 'Nunito', 'sans-serif';
- }
+  border: none;
+  font-family: 'Nunito', 'sans-serif';
+  font-size: 30px;
+  background: #404040;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 10px;
+  height: 60px;
+  width: 125px;
+  border-radius: 20px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+  .BUTTON_MZE:hover {
+    color: #B52E31 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: black;
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.5s ease 0s;
+    }
 
  input[type=text]{
     border-radius:25px;
@@ -55,5 +59,6 @@
 
 .response {
   color: whitesmoke;
-  font-size: 25px;
+  font-size: 27px;
+  text-shadow: 2.5px 2.5px black;
 }

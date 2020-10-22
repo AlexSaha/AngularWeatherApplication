@@ -1,6 +1,7 @@
-# AngularWeatherApp
+# Angular Weather Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
+A simple weather web app utilizing OpenWeatherMap's free API. 
+Can be found on my porfolio website alexandersaha.com/AngularWeatherApplication
 
 ## PERSONAL NOTES:
 
